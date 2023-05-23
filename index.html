@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Music</title>
+</head>
+<body>
+	<div class='main'>
+		<nav>
+			<div class='logo'>
+				<img src="images/logo_transparent.png" >
+			</div>
+			<div class='buttons'>
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">PLAYLISTS</a></li>
+					<li><a href="#">ALBUMS</a></li>
+					<li><a href="#">PROFILE</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class='vinil'>
+			<div class="overlay-black"></div>
+			<div class="overlay-orange"></div>
+			<div id='circle'>
+				<div class='song one'>
+					<img src="images/eminem.png" alt="">
+					<div class="songinfo">
+						<h1>EMINEM</h1>
+						<p>Book of Rhymes</p>
+					</div>
+					<div class="reactions">
+						<img  src="images/heart_hollow.png" alt="" class="like" id="1" name="likeImg" onclick="changeImage(1)" />
+					</div>
+				</div>
+				<div class='song two'>
+					<img src="images/lamar.jpg" alt="">
+					<div class="songinfo">
+						<h1>K.LAMAR</h1>
+						<p>DNA.</p>
+					</div>
+					<div class="reactions">
+						<img  src="images/heart_hollow.png" alt="" class="like" id="2" name="likeImg" onclick="changeImage(2)" />
+					</div>
+				</div>
+				
+				<div class='song three'>
+					<img src="images/joyner lucas.jpeg" alt="">
+					<div class="songinfo">
+						<h1>J.LUCAS</h1>
+						<p>ADHD</p>
+					</div>
+					<div class="reactions">
+						<img  src="images/heart_hollow.png" alt="" class="like" id="3" name="likeImg" onclick="changeImage(3)" />
+					</div>
+				</div>
+				<div class='song four'>
+					<img src="images/kidcudi.jpg" alt="">
+					<div class="songinfo">
+						<h1>KID CUDI</h1>
+						<p>Tequila Shots</p>
+					</div>
+					<div class="reactions">
+						<img  src="images/heart_hollow.png" alt="" class="like" id="4" name="likeImg" onclick="changeImage(4)" />
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="controls">
+			<img src="images/up_arrow.png" id="nextBtn">
+			<h3>SONG</h3>
+			<img src="images/down_arrow.png" id="prevBtn">
+		</div>
+
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.main{
+	margin: 0%;
+	height: 100vh;
+	position: relative;
+	background-image: url("images/guitar.jpg");
+	overflow: hidden;
+}
+nav{
+	display: flex;
+	position: sticky;
+
+}
+.buttons{
+	display: flex;
+	position: sticky;
+	padding-left: 55%;
+}
+.buttons ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 20px 20px 20px 20px;
+	text-align: right;
+	
+}
+.buttons ul li a{
+	float: right;
+	text-align: right;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: sans-serif;
+	
+}
+nav a:hover {
+	color: orange!important;
+}
+.logo{
+	margin: 0px;
+	padding-left: 4%;
+
+}
+.logo img{
+	width: 150px;
+}
+.vinil{
+	width: 100vh;
+	height: 100vh;
+	position: sticky;
+	top: 50%;
+	left: 100%;
+	translate: translateY(50);
+}
+#circle{
+	width: 100vh;
+	height: 100vh;
+	position: sticky;
+	top: 0;
+	left: 100%;
+	border-radius: 50%;
+	background-color: transparent;	
+	transform: rotate(0deg);
+	transition: 1s;
+}
+.song img{
+	width: 100px;
+}
+.song{
+	z-index: 10;
+	position: absolute;
+	display: flex;
+	color: white;
+}
+.one{
+	z-index: 10;
+	top: 47vh;
+	right: 2.6vw;
+	transform: rotate(180deg);
+}
+.two{
+	z-index: 10;
+	top: 16vh;
+	left: 18.2vw;
+	transform: rotate(-270deg);
+}
+.three{
+	z-index: 10;
+	bottom: 47vh;
+	left: 2.6vw;
+}
+.four{
+	z-index: 10;
+	bottom: 16vh;
+	right: 18.2vw;
+	transform: rotate(-90deg);
+}
+.songinfo{
+	padding: 8px;
+}
+.songinfo h1{
+	font-family: sans-serif;
+	font-size: 3vh;
+}
+.songinfo p{
+	font-family: sans-serif;
+	font-size: 2.1vh;
+	padding: 5px;
+}
+.controls{
+	position:absolute;
+	left: 25%;
+	top: 40%;
+	margin: 20px 0px;
+	
+}
+.controls h3{
+	color: transparent;
+	font-family: sans-serif;
+	font-size: 2.6vh;
+	padding-left: 2px;
+}
+#nextBtn{
+	width: 3.6vw;
+	cursor: pointer;
+}
+#prevBtn{
+	width: 3.6vw;
+	cursor: pointer;
+}
+.overlay-orange{
+	width: 0;
+	height: 0;
+	padding: 0;
+	margin: 0;
+	border-radius: 50%;
+	border-top: 50vh solid transparent;
+	border-bottom: 50vh solid transparent;
+	border-left: 50vh solid orange;
+	border-right: 50vh solid transparent;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.overlay-black{
+	z-index: 1;
+	width: 0;
+	height: 0;
+	padding: 0;
+	margin: 0;
+	border-radius: 50%;
+	border-top: 50vh solid black;
+	border-bottom: 50vh solid black;
+	border-left: 50vh solid transparent;
+	border-right: 50vh solid black;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.like{
+	z-index: 10000;
+	padding-top: 2vh;
+	max-width: 7vh;
+	max-height: 7vh;
+	position: absolute;
+}
